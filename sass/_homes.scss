@@ -5,6 +5,10 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 6rem 0;
+  }
 }
 
 .home {
@@ -61,8 +65,6 @@
   &__price {
     font-size: 1.5rem;
     margin-left: 2rem;
-
-    display: flex;
     align-items: center;
 
     svg {
