@@ -1,0 +1,31 @@
+// Mix-in 은 자식 선택자에게 코드가 복사되나,
+// Extend 는 부모 선택자에게 자식 선택자들의 코드가 복사됨
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.9rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
